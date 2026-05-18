@@ -3,7 +3,13 @@ import path from "path";
 
 const clientDir = "dist/client";
 
-const wranglerJson = path.join(clientDir, "wrangler.json");
+const deployConfig = path.join(".wrangler", "deploy", "config.json");
+if (fs.existsSync(deployConfig)) {
+  fs.rmSync(deployConfig);
+  console.log(".wrangler/deploy/config.json removido");
+}
+
+const wranglerJson = path.join("dist/client", "wrangler.json");
 if (fs.existsSync(wranglerJson)) {
   fs.rmSync(wranglerJson);
   console.log("wrangler.json removido do dist/client");
