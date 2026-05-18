@@ -10,26 +10,33 @@ on:
       - main
 
 jobs:
-  build:
+  quality:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Lint
         run: npm run lint
 
-      - name: Build
-        run: npm run build
+      - name: Typecheck
+        run: npm run typecheck
 
-      - name: Test
+      - name: Run tests
         run: npm run test
+
+      - name: Generate coverage
+        run: npm run coverage
+
+      - name: Build project
+        run: npm run build

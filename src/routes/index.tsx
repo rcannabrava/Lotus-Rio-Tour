@@ -13,28 +13,132 @@ import { CTA } from "@/components/sections/CTA";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Luxury Private Tours in Rio | Lotus Rio Tour" },
+      {
+        title: "Luxury Private Tours in Rio | Lotus Rio Tour",
+      },
+
       {
         name: "description",
         content:
-          "Private luxury tours and bespoke experiences in Rio de Janeiro with Patricia Cannabrava. Discover Christ the Redeemer, Sugarloaf, beaches, yachts and exclusive tailor-made itineraries in English, Spanish and Portuguese.",
+          "Luxury private tours and bespoke experiences in Rio de Janeiro with multilingual local guidance.",
       },
+
+      {
+        name: "keywords",
+        content:
+          "Rio de Janeiro private tours, luxury tours Rio, Christ the Redeemer tour, Sugarloaf Mountain tour, private guide Rio de Janeiro",
+      },
+
+      // OPEN GRAPH
+
       {
         property: "og:title",
         content: "Luxury Private Tours in Rio | Lotus Rio Tour",
       },
+
       {
         property: "og:description",
-        content:
-          "Private, elegant and unhurried experiences in Rio de Janeiro designed entirely around you.",
+        content: "Private, elegant and tailor-made experiences in Rio de Janeiro.",
       },
-      { property: "og:type", content: "website" },
+
       {
-        links: {
-          rel: "icon",
-          type: "image/x-icon",
-          href: "/favicon.ico",
-        },
+        property: "og:type",
+        content: "website",
+      },
+
+      {
+        property: "og:url",
+        content: "https://lotusriotour.com",
+      },
+
+      {
+        property: "og:image",
+        content: "https://lotusriotour.com/og-image.jpg",
+      },
+
+      // TWITTER
+
+      {
+        name: "twitter:title",
+        content: "Luxury Private Tours in Rio | Lotus Rio Tour",
+      },
+
+      {
+        name: "twitter:description",
+        content: "Private luxury experiences in Rio de Janeiro.",
+      },
+
+      {
+        name: "twitter:image",
+        content: "https://lotusriotour.com/og-image.jpg",
+      },
+
+      // GEO
+
+      {
+        name: "geo.region",
+        content: "BR-RJ",
+      },
+
+      {
+        name: "geo.placename",
+        content: "Rio de Janeiro",
+      },
+    ],
+
+    links: [
+      // CANONICAL
+
+      {
+        rel: "canonical",
+        href: "https://lotusriotour.com",
+      },
+
+      // HREFLANG
+
+      {
+        rel: "alternate",
+        hrefLang: "en",
+        href: "https://lotusriotour.com/en",
+      },
+
+      {
+        rel: "alternate",
+        hrefLang: "pt-BR",
+        href: "https://lotusriotour.com/pt-BR",
+      },
+
+      {
+        rel: "alternate",
+        hrefLang: "es",
+        href: "https://lotusriotour.com/es",
+      },
+    ],
+
+    scripts: [
+      {
+        type: "application/ld+json",
+
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+
+          "@type": "TravelAgency",
+
+          name: "Lotus Rio Tour",
+
+          url: "https://lotusriotour.com",
+
+          image: "https://lotusriotour.com/og-image.jpg",
+
+          description: "Luxury private tours and bespoke experiences in Rio de Janeiro.",
+
+          areaServed: {
+            "@type": "City",
+            name: "Rio de Janeiro",
+          },
+
+          availableLanguage: ["English", "Portuguese", "Spanish"],
+        }),
       },
     ],
   }),

@@ -72,39 +72,51 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   head: () => ({
     meta: [
       { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lotus Rio Tour — Private Tour Guide in Rio de Janeiro" },
+
       {
-        name: "description",
-        content: "Bespoke private tours of Rio de Janeiro by Patricia Cannabrava.",
+        name: "viewport",
+        content: "width=device-width, initial-scale=1",
       },
-      { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:title", content: "Lotus Rio Tour — Private Tour Guide in Rio de Janeiro" },
-      { name: "twitter:title", content: "Lotus Rio Tour — Private Tour Guide in Rio de Janeiro" },
+
       {
-        property: "og:description",
-        content: "Bespoke private tours of Rio de Janeiro by Patricia Cannabrava.",
+        name: "theme-color",
+        content: "#000000",
       },
+
       {
-        name: "twitter:description",
-        content: "Bespoke private tours of Rio de Janeiro by Patricia Cannabrava.",
+        name: "robots",
+        content: "index, follow",
       },
+
       {
-        property: "og:image",
-        content:
-          "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/c1d62e21-33ab-4534-b838-1f83aa33b88c",
+        name: "twitter:card",
+        content: "summary_large_image",
       },
-      {
-        name: "twitter:image",
-        content:
-          "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/c1d62e21-33ab-4534-b838-1f83aa33b88c",
-      },
-      { property: "og:type", content: "website" },
     ],
+
     links: [
-      { rel: "stylesheet", href: appCss },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico",
+      },
+
+      {
+        rel: "stylesheet",
+        href: appCss,
+      },
+
+      {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap",
