@@ -1,0 +1,4 @@
+name = "lotus-rio-tour"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist/client"
+main = "dist/server/server.js"
