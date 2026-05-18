@@ -2,11 +2,16 @@ import fs from "fs";
 import path from "path";
 
 const clientDir = "dist/client";
+
+const wranglerJson = path.join(clientDir, "wrangler.json");
+if (fs.existsSync(wranglerJson)) {
+  fs.rmSync(wranglerJson);
+  console.log("wrangler.json removido do dist/client");
+}
+
 const files = fs.readdirSync(path.join(clientDir, "assets"));
 
-const js =
-  files.find((f) => f.startsWith("index-") && f.endsWith(".js") && f.includes("BL")) ||
-  files.find((f) => f.startsWith("index-") && f.endsWith(".js") && !f.includes("CeRWHq"));
+const js = files.find((f) => f.startsWith("index-") && f.endsWith(".js") && !f.includes("CeRWHq"));
 
 const css = files.find((f) => f.startsWith("styles-") && f.endsWith(".css"));
 
