@@ -7,6 +7,7 @@ dist/
 build/
 .vercel/
 .output/
+.wrangler/
 
 # Environment variables
 .env
