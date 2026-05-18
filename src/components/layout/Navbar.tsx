@@ -21,11 +21,11 @@ export function Navbar() {
   }, []);
 
   const links = [
-    { label: t("nav.about", "About"), href: "#about" },
-    { label: t("nav.tours", "Tours"), href: "#tours" },
-    { label: t("nav.why", "Why Lotus"), href: "#why" },
-    { label: t("nav.reviews", "Reviews"), href: "#reviews" },
-    { label: t("nav.faq", "FAQ"), href: "#faq" },
+    { label: t("nav.about"), href: "#about" },
+    { label: t("nav.tours"), href: "#tours" },
+    { label: t("nav.why"), href: "#why" },
+    { label: t("nav.reviews"), href: "#reviews" },
+    { label: t("nav.faq"), href: "#faq" },
   ];
 
   return (
