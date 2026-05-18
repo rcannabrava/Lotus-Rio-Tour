@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "Rio de Janeiro private tours, luxury tours Rio, Christ the Redeemer tour, Sugarloaf Mountain tour, private guide Rio de Janeiro",
+          "Rio de Janeiro private tours, luxury tours Rio, Christ the Redeemer tour, Sugarloaf Mountain tour, private guide Rio de Janeiro, Private tour in Rio de Janeiro",
       },
 
       // OPEN GRAPH
@@ -87,31 +87,9 @@ export const Route = createFileRoute("/")({
     ],
 
     links: [
-      // CANONICAL
-
       {
         rel: "canonical",
         href: "https://lotusriotour.com",
-      },
-
-      // HREFLANG
-
-      {
-        rel: "alternate",
-        hrefLang: "en",
-        href: "https://lotusriotour.com/en",
-      },
-
-      {
-        rel: "alternate",
-        hrefLang: "pt-BR",
-        href: "https://lotusriotour.com/pt-BR",
-      },
-
-      {
-        rel: "alternate",
-        hrefLang: "es",
-        href: "https://lotusriotour.com/es",
       },
     ],
 
