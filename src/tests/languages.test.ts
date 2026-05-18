@@ -1,8 +1,13 @@
 import { describe, expect, it } from "vitest";
+
 import { LANGUAGES } from "@/i18n/languages";
 
-describe("languages", () => {
-  it("contains english", () => {
-    expect(LANGUAGES.some((l) => l.code === "en")).toBe(true);
+describe("languages config", () => {
+  const expectedLanguages = ["en", "pt-BR", "es-ES"];
+
+  expectedLanguages.forEach((code) => {
+    it(`contains ${code}`, () => {
+      expect(LANGUAGES.some((lang) => lang.code === code)).toBe(true);
+    });
   });
 });
