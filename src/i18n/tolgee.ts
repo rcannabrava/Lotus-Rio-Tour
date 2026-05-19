@@ -13,7 +13,10 @@ let builder = Tolgee().use(DevTools()).use(FormatSimple());
 if (isBrowser) {
   builder = builder.use(LanguageDetector()).use(LanguageStorage());
 }
-
+console.log("ENV CHECK", {
+  apiKey: import.meta.env.VITE_TOLGEE_API_KEY,
+  apiUrl: import.meta.env.VITE_TOLGEE_API_URL,
+});
 export const tolgee = builder.init({
   apiKey,
   apiUrl,
