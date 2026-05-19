@@ -1,6 +1,5 @@
-import { Tolgee, LanguageDetector, LanguageStorage } from "@tolgee/web";
+import { Tolgee, LanguageDetector, LanguageStorage, BackendFetch } from "@tolgee/web";
 import { DevTools, FormatSimple } from "@tolgee/react";
-
 import { DEFAULT_LANG, LANGUAGES } from "./languages";
 
 const apiKey = import.meta.env.VITE_TOLGEE_API_KEY as string | undefined;
@@ -8,7 +7,14 @@ const apiUrl = import.meta.env.VITE_TOLGEE_API_URL as string | undefined;
 
 const isBrowser = typeof window !== "undefined";
 
-let builder = Tolgee().use(FormatSimple());
+let builder = Tolgee()
+  .use(FormatSimple())
+  .use(
+    BackendFetch({
+      prefix: "https://cdn.tolg.ee/5515c5c9d7e408b8ac3e6425430b78cf",
+      fallbackOnFail: true,
+    }),
+  );
 
 if (import.meta.env.DEV) {
   builder = builder.use(DevTools());
@@ -24,4 +30,7 @@ export const tolgee = builder.init({
   availableLanguages: LANGUAGES.map((l) => l.code),
   defaultLanguage: DEFAULT_LANG,
   fallbackLanguage: DEFAULT_LANG,
+  observerOptions: {
+    fullKeyEncode: true,
+  },
 });

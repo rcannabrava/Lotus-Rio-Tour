@@ -5,9 +5,5 @@ import { TolgeeProvider } from "@tolgee/react";
 import { tolgee } from "@/i18n/tolgee";
 
 export function renderWithProviders(ui: ReactNode) {
-  return render(
-    <TolgeeProvider tolgee={tolgee} fallback="Loading translation...">
-      {ui}
-    </TolgeeProvider>,
-  );
+  return render(<TolgeeProvider tolgee={tolgee}>{ui}</TolgeeProvider>);
 }
