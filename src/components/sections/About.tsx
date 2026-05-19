@@ -6,10 +6,10 @@ import { useTranslate } from "@tolgee/react";
 export function About() {
   const { t } = useTranslate();
   const stats = [
-    { value: "10+", label: t("about.stats.years", "Years of Experience") },
-    { value: "3", label: t("about.stats.languages", "Languages") },
-    { value: "1k+", label: t("about.stats.travelers", "Happy Travelers") },
-    { value: "5★", label: t("about.stats.rating", "Average Rating") },
+    { value: "10+", label: t("about.stats.years") },
+    { value: "3", label: t("about.stats.languages") },
+    { value: "1k+", label: t("about.stats.travelers") },
+    { value: "5★", label: t("about.stats.rating") },
   ];
   return (
     <section id="about" className="relative bg-background py-28 lg:py-40">
