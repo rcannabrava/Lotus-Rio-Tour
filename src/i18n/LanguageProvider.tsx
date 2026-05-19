@@ -5,7 +5,7 @@ import { useLanguage } from "./languages";
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   return (
-    <TolgeeProvider tolgee={tolgee} fallback={null}>
+    <TolgeeProvider tolgee={tolgee} fallback="Loading translation...">
       <HtmlLangSync />
       {children}
     </TolgeeProvider>
