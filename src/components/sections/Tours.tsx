@@ -78,7 +78,7 @@ export function Tours() {
                     rel="noopener noreferrer"
                     className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-foreground hover:text-gold"
                   >
-                    {t("tours.inquire", "Inquire about this tour")}
+                    {t("tours.inquire")}
                     <span className="transition-transform group-hover:translate-x-0.5">→</span>
                   </a>
                 </div>
