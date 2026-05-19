@@ -1,5 +1,5 @@
-import { useCallback, useEffect, type ReactNode } from "react";
-import { TolgeeProvider, useTolgee } from "@tolgee/react";
+import { useEffect, type ReactNode } from "react";
+import { TolgeeProvider } from "@tolgee/react";
 import { tolgee } from "./tolgee";
 import { useLanguage } from "./languages";
 
