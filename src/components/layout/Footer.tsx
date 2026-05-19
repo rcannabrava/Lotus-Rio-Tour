@@ -6,11 +6,11 @@ import logo from "@/assets/logo.svg";
 export function Footer() {
   const { t } = useTranslate();
   const links = [
-    { label: t("nav.about", "About"), href: "#about" },
-    { label: t("nav.tours", "Tours"), href: "#tours" },
-    { label: t("nav.why", "Why Lotus"), href: "#why" },
-    { label: t("nav.reviews", "Reviews"), href: "#reviews" },
-    { label: t("nav.faq", "FAQ"), href: "#faq" },
+    { label: t("nav.about"), href: "#about" },
+    { label: t("nav.tours"), href: "#tours" },
+    { label: t("nav.why"), href: "#why" },
+    { label: t("nav.reviews"), href: "#reviews" },
+    { label: t("nav.faq"), href: "#faq" },
   ];
   return (
     <footer className="bg-[oklch(0.14_0.03_215)] text-white/80">
