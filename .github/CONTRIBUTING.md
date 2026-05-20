@@ -28,8 +28,6 @@ Clone the repository:
 git clone https://github.com/YOUR-USERNAME/lotusriotour.git
 ```
 
-````
-
 Navigate to the project folder:
 
 ```bash
@@ -102,4 +100,3 @@ refactor/refactor-name
 ## License
 
 By contributing to this project, you agree that your code will be distributed under the same license as the repository.
-````
