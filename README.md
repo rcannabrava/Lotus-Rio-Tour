@@ -1,5 +1,9 @@
 # Lotus Rio Tour
 
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![CI](https://github.com/rcannabrava/lotusriotour/actions/workflows/ci.yml/badge.svg)
+
 Official website of Lotus Rio Tour, a private tourism company in Rio de Janeiro founded and led by Patricia Cannabrava. The website showcases the available tours, customer testimonials, information about the guide, and a direct contact channel through WhatsApp.
 
 ## About the project
