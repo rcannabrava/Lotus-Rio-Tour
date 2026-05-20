@@ -1,9 +1,8 @@
-
 # Contributing
 
-Obrigado por considerar contribuir com o Lotus Rio Tour.
+Thank you for considering contributing to Lotus Rio Tour.
 
-## Tecnologias utilizadas
+## Technologies Used
 
 - React
 - TypeScript
@@ -13,51 +12,53 @@ Obrigado por considerar contribuir com o Lotus Rio Tour.
 - Cloudflare Workers
 - Tolgee
 
-## Pré-requisitos
+## Prerequisites
 
-Antes de começar, você precisa ter instalado:
+Before getting started, make sure you have installed:
 
 - Node.js
 - npm
 - Git
 
-## Rodando o projeto localmente
+## Running the Project Locally
 
-Clone o repositório:
+Clone the repository:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/lotusriotour.git
+git clone https://github.com/YOUR-USERNAME/lotusriotour.git
 ```
 
-Entre na pasta:
+````
+
+Navigate to the project folder:
 
 ```bash
 cd lotusriotour
 ```
 
-Instale as dependências:
+Install the dependencies:
 
 ```bash
 npm install
 ```
 
-Inicie o ambiente de desenvolvimento:
+Start the development environment:
 
 ```bash
 npm run dev
 ```
 
-Para testar o ambiente Cloudflare localmente:
+To test the Cloudflare environment locally:
 
 ```bash
 npx wrangler dev
 ```
 
-## Padrão de commits
+## Commit Convention
 
-Este projeto utiliza Conventional Commits.
+This project follows the Conventional Commits standard.
 
-Exemplos:
+Examples:
 
 ```bash
 feat: add testimonials section
@@ -67,7 +68,7 @@ docs: update README
 style: improve mobile spacing
 ```
 
-## Estrutura básica do projeto
+## Basic Project Structure
 
 ```txt
 src/
@@ -81,23 +82,24 @@ src/
 
 ## Pull Requests
 
-Antes de abrir um PR:
+Before opening a PR:
 
-* Verifique se o projeto builda corretamente
-* Evite commits desnecessários
-* Mantenha o código consistente com o padrão atual
-* Teste as alterações localmente
+- Make sure the project builds successfully
+- Avoid unnecessary commits
+- Keep the code consistent with the current style
+- Test your changes locally
 
-## Branches
+## Branch Naming
 
-Sugestão de nomenclatura:
+Suggested naming conventions:
 
 ```bash
-feature/nome-da-feature
-fix/nome-do-fix
-refactor/nome-do-refactor
+feature/feature-name
+fix/fix-name
+refactor/refactor-name
 ```
 
-## Licença
+## License
 
-Ao contribuir com este projeto, você concorda que seu código será disponibilizado sob a mesma licença do repositório.
+By contributing to this project, you agree that your code will be distributed under the same license as the repository.
+````
