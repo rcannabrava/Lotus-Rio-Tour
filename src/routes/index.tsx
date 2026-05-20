@@ -14,26 +14,26 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Luxury Private Tours in Rio | Lotus Rio Tour",
+        title: "Private Tours in Rio | Lotus Rio Tour",
       },
 
       {
         name: "description",
         content:
-          "Luxury private tours and bespoke experiences in Rio de Janeiro with multilingual local guidance.",
+          "Private tours in Rio de Janeiro with a local multilingual guide. Explore Christ the Redeemer, Sugarloaf Mountain, beaches, nature and exclusive experiences with personalized service.",
       },
 
       {
         name: "keywords",
         content:
-          "Rio de Janeiro private tours, luxury tours Rio, Christ the Redeemer tour, Sugarloaf Mountain tour, private guide Rio de Janeiro, Private tour in Rio de Janeiro",
+          "private tours in Rio, private tours Rio de Janeiro, Rio de Janeiro private tours, private tour Rio de Janeiro, private guide Rio de Janeiro, luxury tours Rio de Janeiro, Rio sightseeing tour, custom tours Rio, tailor made tours Rio de Janeiro, Christ the Redeemer private tour, Sugarloaf Mountain private tour, Tijuca Forest tour, Rio helicopter tour, Rio boat tour, Carnival experience Rio, Maracana tour, English speaking guide Rio, Spanish speaking guide Rio, VIP tours Rio de Janeiro, personalized tours Rio, exclusive tours Rio de Janeiro, best private tours in Rio, day tours Rio de Janeiro, local tour guide Rio, tourism in Rio de Janeiro",
       },
 
       // OPEN GRAPH
 
       {
         property: "og:title",
-        content: "Luxury Private Tours in Rio | Lotus Rio Tour",
+        content: "Private Tours in Rio | Lotus Rio Tour",
       },
 
       {
@@ -60,12 +60,12 @@ export const Route = createFileRoute("/")({
 
       {
         name: "twitter:title",
-        content: "Luxury Private Tours in Rio | Lotus Rio Tour",
+        content: "Private Tour in Rio | Lotus Rio Tour",
       },
 
       {
         name: "twitter:description",
-        content: "Private luxury experiences in Rio de Janeiro.",
+        content: "Private tour in Rio de Janeiro.",
       },
 
       {
@@ -108,7 +108,7 @@ export const Route = createFileRoute("/")({
 
           image: "https://lotusriotour.com/og-image.jpg",
 
-          description: "Luxury private tours and bespoke experiences in Rio de Janeiro.",
+          description: "Private tours and bespoke experiences in Rio de Janeiro.",
 
           areaServed: {
             "@type": "City",
