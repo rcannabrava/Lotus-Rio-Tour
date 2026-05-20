@@ -28,8 +28,6 @@ Clone the repository:
 git clone https://github.com/YOUR-USERNAME/lotusriotour.git
 ```
 
-````
-
 Navigate to the project folder:
 
 ```bash
