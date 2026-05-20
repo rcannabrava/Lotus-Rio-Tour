@@ -100,4 +100,3 @@ refactor/refactor-name
 ## License
 
 By contributing to this project, you agree that your code will be distributed under the same license as the repository.
-````
