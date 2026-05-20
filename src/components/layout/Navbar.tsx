@@ -43,10 +43,9 @@ export function Navbar() {
             scrolled ? "text-foreground" : "text-white",
           )}
         >
-          <img src={logo} alt="Lotus Rio Tour" className="h-20 w-auto" />
+          <img src={logo} alt="Lotus Rio Tour" className="h-20 w-20 sm:w-auto" />
         </Link>
-
-        <nav className="hidden items-center gap-9 md:flex">
+        <nav className="hidden items-center gap-9 px-3 md:flex">
           {links.map((l) => (
             <a
               key={l.href}
@@ -81,7 +80,7 @@ export function Navbar() {
             onClick={() => setOpen((v) => !v)}
             className={cn(scrolled ? "text-foreground" : "text-white")}
           >
-            {open ? <X size={26} /> : <Menu size={26} />}
+            {open ? <X size={26} /> : <Menu size={25} />}
           </button>
           <TripadvisorIcon />
         </div>

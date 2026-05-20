@@ -19,7 +19,7 @@ export function Hero() {
       <div className="absolute inset-0 gradient-hero-overlay" />
       <div className="absolute inset-0 bg-[oklch(0.1_0.03_215/0.25)]" />
 
-      <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pb-24 pt-32 lg:px-10 lg:pb-32">
+      <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pb-5 lg:px-10 lg:pb-32 lg:pt">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
