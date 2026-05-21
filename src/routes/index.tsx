@@ -4,7 +4,6 @@ import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
-import { Tours } from "@/components/sections/Tours";
 import { WhyLotus } from "@/components/sections/WhyLotus";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQ } from "@/components/sections/FAQ";
@@ -129,7 +128,6 @@ function HomePage() {
       <Navbar />
       <Hero />
       <About />
-      <Tours />
       <WhyLotus />
       <Testimonials />
       <FAQ />

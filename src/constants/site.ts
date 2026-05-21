@@ -9,11 +9,3 @@ export const SITE = {
   tripadvisor:
     "https://www.tripadvisor.com/Attraction_Review-g303506-d19921867-Reviews-Lotus_Rio_Tour-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html",
 } as const;
-
-export const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Tours", href: "#tours" },
-  { label: "Why Lotus", href: "#why" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "FAQ", href: "#faq" },
-] as const;

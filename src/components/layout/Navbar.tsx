@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { SITE } from "@/constants/site";
@@ -13,6 +13,12 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   const { t } = useTranslate();
 
+  const location = useLocation();
+
+  const isHome = location.pathname === "/";
+
+  const navTextColor = !isHome || scrolled ? "text-foreground" : "text-white";
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
@@ -21,10 +27,10 @@ export function Navbar() {
   }, []);
 
   const links = [
-    { label: t("nav.about"), href: "#about" },
-    { label: t("nav.tours"), href: "#tours" },
-    { label: t("nav.why"), href: "#why" },
-    { label: t("nav.reviews"), href: "#reviews" },
+    { label: t("nav.about"), href: "/#about" },
+    { label: t("nav.tours"), href: "/tours" },
+    { label: t("nav.why"), href: "/#why" },
+    { label: t("nav.reviews"), href: "/#reviews" },
     { label: t("nav.faq"), href: "#faq" },
   ];
 
@@ -41,21 +47,23 @@ export function Navbar() {
           className={cn(
             "font-display text-xl tracking-tight transition-colors",
             scrolled ? "text-foreground" : "text-white",
+            navTextColor,
           )}
         >
           <img src={logo} alt="Lotus Rio Tour" className="h-20 w-20 sm:w-auto" />
         </Link>
         <nav className="hidden items-center gap-9 px-3 md:flex">
-          {links.map((l) => (
+          {links.map((link) => (
             <a
-              key={l.href}
-              href={l.href}
+              key={link.href}
+              href={link.href}
               className={cn(
                 "text-sm transition-colors hover:text-gold",
                 scrolled ? "text-foreground/80" : "text-white/85",
+                navTextColor,
               )}
             >
-              {l.label}
+              {link.label}
             </a>
           ))}
         </nav>
@@ -89,14 +97,14 @@ export function Navbar() {
       {open && (
         <div className="border-t border-border/60 bg-background/95 backdrop-blur-xl md:hidden">
           <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-6">
-            {links.map((l) => (
+            {links.map((link) => (
               <a
-                key={l.href}
-                href={l.href}
+                key={link.href}
+                href={link.href}
                 onClick={() => setOpen(false)}
                 className="rounded-md px-3 py-3 text-base text-foreground/85 hover:bg-secondary"
               >
-                {l.label}
+                {link.label}
               </a>
             ))}
             <a
