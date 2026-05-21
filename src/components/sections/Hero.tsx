@@ -19,7 +19,7 @@ export function Hero() {
       <div className="absolute inset-0 gradient-hero-overlay" />
       <div className="absolute inset-0 bg-[oklch(0.1_0.03_215/0.25)]" />
 
-      <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pb-5 min-[500px]:px-10 min-[500px]:pb-32">
+      <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pb-5 min-[500px]:px-10 min-[500px]:pb-32 [@media(max-height:710px)]:pb-20">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,10 +29,12 @@ export function Hero() {
           <span className="eyebrow inline-flex items-center gap-2 text-white">
             <MapPin size={14} /> {t("hero.eyebrow")}
           </span>
-          <h1 className="mt-6 font-display text-5xl leading-[1.05] text-white text-balance sm:text-6xl lg:text-7xl">
+          <h1 className="mt-6 font-display text-5xl leading-[1.05] text-white text-balance sm:text-6xl lg:text-7xl [@media(max-height:710px)]:text-gold">
             {t("hero.titleLine1")}
             <br />
-            <span className="italic text-gold">{t("hero.titleLine2")}</span>
+            <span className="italic text-gold [@media(max-height:710px)]:hidden">
+              {t("hero.titleLine2")}
+            </span>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg">
             {t("hero.description")}
