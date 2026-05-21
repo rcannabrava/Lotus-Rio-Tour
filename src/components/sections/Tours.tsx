@@ -7,7 +7,7 @@ import { useTranslate } from "@tolgee/react";
 export function Tours() {
   const { t } = useTranslate();
   return (
-    <section id="tours" className="relative bg-secondary/40 py-28 lg:py-40">
+    <section id="tours" className="relative bg-background py-28 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
           <div className="max-w-2xl">
